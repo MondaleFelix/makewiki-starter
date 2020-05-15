@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'wiki'
+    'wiki',
 ]
 
 MIDDLEWARE = [
@@ -139,7 +139,7 @@ LOGOUT_REDIRECT_URL = "/"
 # Required for Heroku
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-
+MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'
 # PROTIP:
 # Need to override settings? Create a local_settings.py file
 # in this directory, and add settings there.
