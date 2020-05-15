@@ -13,7 +13,7 @@
 
 					<p>
 							<label for="id_{{ field.name }}">{{ field.label|title }}:</label>
-							<input type= "{% if "password" in field.name %} password {% else %}text{% endif %}" name="{{ field.name }}" id="id_{{ field.name }}" required>
+							<input type= "password" name="{{ field.name }}" id="id_{{ field.name }}" required>
 					</p>
 
 			{% endfor %}
